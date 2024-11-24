@@ -11,7 +11,5 @@ function login(username, password) {
         console.log("Nu ati introdus ceva corect!");
     }
 }
-
-// Test the function
 login("admin", "12345"); 
 login("user", "wrong_pass"); 
