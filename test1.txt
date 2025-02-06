@@ -1,1 +1,30 @@
-Acesta este un fișier de test 1
+Coduri la animatii:
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nike</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+
+  <script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    context.beginPath();
+    context.moveTo(50, 300); 
+    context.bezierCurveTo(50, 300 - 0.07 * 50, 50 + 0.80 * 200, 500 - 0.10 * 200, 300, 150);
+    context.stroke();
+    context.beginPath();
+    context.moveTo(50, 300); 
+    context.bezierCurveTo(50, 300 - 0.07 * 50, 50 + 0.60 * 200, 400 - 0.32 * 150, 300, 150); 
+    context.stroke();
+  </script>
+</body>
+</html>
